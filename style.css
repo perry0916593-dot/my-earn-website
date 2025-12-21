@@ -1,43 +1,43 @@
+/* Modern layout improvements */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  background-color: #f7f9fc;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+  position: sticky;
+  top: 0;
 }
 
-header nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+nav a {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #444;
 }
 
-main {
-  padding: 20px;
-  text-align: center;
+nav a:hover {
+  background: #000;
 }
 
-footer {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 10px;
+/* Buttons */
+button, .button {
+  background: #25D366;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
 }
 
-.testimonial {
-  background: #f9f9f9;
-  padding: 15px;
-  margin: 15px auto;
-  width: 90%;
-  max-width: 600px;
-  border-left: 5px solid #333;
+/* Mobile friendly */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
 }
