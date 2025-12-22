@@ -1,43 +1,100 @@
-/* Modern layout improvements */
-body {
-  background-color: #f7f9fc;
-}
-
+/* ===== HEADER & NAVIGATION ===== */
 header {
-  position: sticky;
-  top: 0;
+  background-color: #1e90ff;
+  padding: 15px;
+  text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-nav a {
-  padding: 8px 14px;
-  border-radius: 6px;
-  background: #444;
-}
-
-nav a:hover {
-  background: #000;
-}
-
-/* Buttons */
-button, .button {
-  background: #25D366;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+header nav a {
   color: white;
-  font-size: 16px;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-/* Mobile friendly */
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== BUTTONS ===== */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f1f1f1;
+  color: #333;
+  margin-top: 30px;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonial {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
+  header nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  main h1 {
+    font-size: 24px;
+  }
+
+  main p {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
   }
 }
+  
